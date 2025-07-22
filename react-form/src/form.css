@@ -1,0 +1,13 @@
+.formComp {
+      background-color: #f8f9fa;
+      height: 100vh;
+      display: flex;
+      /* align-items: center; */
+      justify-content: center;
+    }
+.card {
+      width: 100%;
+      max-width: 800px;
+      padding: 20px;
+      border-radius: 10px;
+};
