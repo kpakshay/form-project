@@ -19,9 +19,9 @@ const NavBar=()=>{
             <Link className="nav-link active" aria-current="page" to="/main">Main</Link>
           
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
             <Link className="nav-link active" aria-current="page" to="/Form">Registration</Link>
-        </li>
+        </li> */}
         <li className="nav-item">
           <a className="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>

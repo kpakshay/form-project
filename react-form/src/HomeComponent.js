@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-// import { BrowserRouter,Routes,Route } from "react-router-dom";
-import NavBar from "./NavBar.js";
 import axios from "axios";
 import MainComponent from "./MainComponent.js";
-import FormComponent from "./FormComponent.js";
+// import FormComponent from "./FormComponent.js";
 
 const HomeComponent = (props) => {
 
@@ -70,7 +67,6 @@ const HomeComponent = (props) => {
             <table class="table">
                 <thead>
                     <tr>
-                        <th scope="col">#</th>
                         <th scope="col">Name</th>
                         <th scope="col">Age</th>
                         <th scope="col">Email</th>

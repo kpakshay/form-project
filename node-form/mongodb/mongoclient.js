@@ -1,13 +1,16 @@
 // mongoclient.js
 // import { MongoClient } from 'mongodb';
 // const mongoose = require('mongoose')
+
 import mongoose from 'mongoose';
+import dotenv from 'dotenv'
+dotenv.config()
 
 
 const connect= async () => {
   try {
     
-    await mongoose.connect('mongodb://localhost:27017/crud_db');
+    await mongoose.connect(`${process.env.DATABASE_URL}`);
     // await client.connect();
     console.log("Connected successfully");
     // return client;

@@ -4,6 +4,8 @@ import express from "express"
 import connect from "./mongodb/mongoclient.js";
 import userRoutes from "./routes/userRoutes.js";
 import cors from 'cors';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const app= express();
 app.use(cors());
@@ -15,6 +17,6 @@ console.log("Hi")
 app.use('/', userRoutes)
 
 
-app.listen(3000,()=>{
+app.listen(process.env.PORT,()=>{
     console.log("App listeniing to port 3000")
 })
